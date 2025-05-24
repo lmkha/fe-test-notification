@@ -2,7 +2,7 @@
 import { getToken } from "firebase/messaging";
 import { messaging } from "../../../firebase";
 
-const VAPID_KEY = "BBVe9T6sp0k-dnReRNQBWqB8Jb9Dy28gF-INkT9WlqyEK4SzAVDHckFqhJzHQ4aPPV1008JjEAf7oajk7XtWJrg";
+const VAPID_KEY = process.env.NEXT_PUBLIC_FIREBASE_FCM_VAPID_KEY
 
 export const requestPermission = async () => {
     try {
